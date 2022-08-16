@@ -72,11 +72,3 @@ const App = () => {
 };
 
 export default App;
-
-const Timer = () => {
-  return (
-    <div>
-      <h1>{timeLeft}</h1>
-    </div>
-  );
-};
