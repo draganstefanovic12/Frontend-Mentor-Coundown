@@ -15,13 +15,12 @@ const App = () => {
   const [duration, setDuration] = useState<any>(691200);
 
   useEffect(() => {
+    const interval = setInterval(() => {
+      setDuration(duration - 1);
+    }, 1000);
     setTimeLeft(intervalToDuration({ start: 0, end: duration * 1000 }));
-    console.log("rednered");
+    return () => clearInterval(interval);
   }, [duration]);
-
-  setInterval(() => {
-    setDuration(duration - 1);
-  }, 1000);
 
   return (
     <div className="main-container">
