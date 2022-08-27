@@ -1,4 +1,4 @@
-# Frontend-Mentor-Countdown
+# Frontend Mentor Countdown
 
 Another Frontend Mentor challenge I did. 
 
