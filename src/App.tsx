@@ -1,18 +1,18 @@
+import "./App.css";
 import { intervalToDuration } from "date-fns";
 import { useEffect, useState } from "react";
-import "./App.css";
 import icoFB from "./assets/icon-facebook.svg";
 import icoINSTA from "./assets/icon-instagram.svg";
 import icoPINT from "./assets/icon-pinterest.svg";
 
 const App = () => {
-  const [timeLeft, setTimeLeft] = useState<any>({
+  const [timeLeft, setTimeLeft] = useState<Duration>({
     days: 8,
     hours: 0,
     minutes: 0,
     seconds: 0,
   });
-  const [duration, setDuration] = useState<any>(691200);
+  const [duration, setDuration] = useState<number>(691200);
 
   useEffect(() => {
     const interval = setInterval(() => {
